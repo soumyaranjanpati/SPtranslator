@@ -18,7 +18,7 @@ import org.json.JSONArray;
 		"sl=" + langFrom + 
 		"&tl=" + langTo + 
 		"&dt=t&q=" + URLEncoder.encode(word, "UTF-8");    
-		
+		//System.out.println("URL "+url);
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection(); 
 		con.setRequestProperty("User-Agent", "Mozilla/5.0");
